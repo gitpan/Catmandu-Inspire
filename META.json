@@ -3,7 +3,7 @@
    "author" : [
       "Vitali Peil <vitali.peil@uni-bielefeld.de>"
    ],
-   "dynamic_config" : 0,
+   "dynamic_config" : 1,
    "generated_by" : "Module::Build version 0.4004, CPAN::Meta::Converter version 2.120630",
    "license" : [
       "perl_5"
@@ -21,6 +21,11 @@
             "Test::More" : "0"
          }
       },
+      "configure" : {
+         "requires" : {
+            "Module::Build" : "0.40"
+         }
+      },
       "runtime" : {
          "requires" : {
             "Catmandu" : "0.2003",
@@ -28,6 +33,16 @@
             "XML::Simple" : "2.20",
             "perl" : "v5.10.1"
          }
+      }
+   },
+   "provides" : {
+      "Catmandu::Importer::Inspire" : {
+         "file" : "lib/Catmandu/Importer/Inspire.pm",
+         "version" : 0
+      },
+      "Catmandu::Inspire" : {
+         "file" : "lib/Catmandu/Inspire.pm",
+         "version" : "0.01"
       }
    },
    "release_status" : "stable",
