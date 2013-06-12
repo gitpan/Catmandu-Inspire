@@ -1,0 +1,23 @@
+---
+abstract: 'Catmandu modules for working with Inspire data.'
+author:
+  - 'Vitali Peil <vitali.peil@uni-bielefeld.de>'
+build_requires:
+  Software::License: 0
+  Test::Exception: 0
+  Test::More: 0
+dynamic_config: 0
+generated_by: 'Module::Build version 0.4004, CPAN::Meta::Converter version 2.120630'
+license: perl
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: Catmandu-Inspire
+requires:
+  Catmandu: 0.2003
+  Furl: 0.41
+  XML::Simple: 2.20
+  perl: v5.10.1
+resources:
+  license: http://dev.perl.org/licenses/
+version: 0.01

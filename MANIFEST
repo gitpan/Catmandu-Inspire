@@ -1,0 +1,9 @@
+Build.PL
+lib/Catmandu/Importer/Inspire.pm
+lib/Catmandu/Inspire.pm
+MANIFEST
+MYMETA.json
+MYMETA.yaml
+README
+t/00-load.t
+t/01-post-load.t

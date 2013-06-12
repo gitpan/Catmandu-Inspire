@@ -1,0 +1,40 @@
+{
+   "abstract" : "Catmandu modules for working with Inspire data.",
+   "author" : [
+      "Vitali Peil <vitali.peil@uni-bielefeld.de>"
+   ],
+   "dynamic_config" : 0,
+   "generated_by" : "Module::Build version 0.4004, CPAN::Meta::Converter version 2.120630",
+   "license" : [
+      "perl_5"
+   ],
+   "meta-spec" : {
+      "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+      "version" : "2"
+   },
+   "name" : "Catmandu-Inspire",
+   "prereqs" : {
+      "build" : {
+         "requires" : {
+            "Software::License" : "0",
+            "Test::Exception" : "0",
+            "Test::More" : "0"
+         }
+      },
+      "runtime" : {
+         "requires" : {
+            "Catmandu" : "0.2003",
+            "Furl" : "0.41",
+            "XML::Simple" : "2.20",
+            "perl" : "v5.10.1"
+         }
+      }
+   },
+   "release_status" : "stable",
+   "resources" : {
+      "license" : [
+         "http://dev.perl.org/licenses/"
+      ]
+   },
+   "version" : "0.01"
+}
