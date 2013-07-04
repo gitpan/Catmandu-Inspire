@@ -3,18 +3,18 @@ require 5.010001;
 use ExtUtils::MakeMaker;
 WriteMakefile
 (
-  'PL_FILES' => {},
-  'INSTALLDIRS' => 'site',
   'NAME' => 'Catmandu::Inspire',
-  'EXE_FILES' => [],
   'VERSION_FROM' => 'lib/Catmandu/Inspire.pm',
   'PREREQ_PM' => {
-                   'Test::More' => 0,
-                   'Test::Exception' => 0,
-                   'XML::Simple' => '2.20',
-                   'Software::License' => 0,
+                   'Catmandu' => '0.5004',
                    'Furl' => '0.41',
-                   'Catmandu' => '0.2003'
-                 }
+                   'Software::License' => 0,
+                   'Test::Exception' => 0,
+                   'Test::More' => 0,
+                   'XML::Simple' => '2.20'
+                 },
+  'INSTALLDIRS' => 'site',
+  'EXE_FILES' => [],
+  'PL_FILES' => {}
 )
 ;

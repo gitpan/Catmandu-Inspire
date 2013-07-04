@@ -4,10 +4,10 @@ use Module::Build;
 
 my $builder = Module::Build->new(
     module_name => 'Catmandu::Inspire',
-    dist_version => '0.01',
+    dist_version => '0.1',
     license => 'perl',
     dist_author => [
-        'Vitali Peil <vitali.peil@uni-bielefeld.de>'
+        'Vitali Peil <vitali.peil at uni-bielefeld.de>'
     ],
     dist_version_from => 'lib/Catmandu/Inspire.pm',
     build_requires => {
@@ -17,7 +17,7 @@ my $builder = Module::Build->new(
     },
     requires => {
         'perl' => '5.10.1',
-        'Catmandu' => '0.2003',
+        'Catmandu' => '0.5004',
         'Furl' => '0.41',
         'XML::Simple' => '2.20'
     },

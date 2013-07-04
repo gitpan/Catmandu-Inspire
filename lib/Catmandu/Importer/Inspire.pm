@@ -23,22 +23,15 @@ use constant DEFAULT_FORMAT => 'endnote';
 # required.
 has base => (is => 'ro', default => sub { return BASE_URL; });
 has format => (is => 'ro', default => sub { return DEFAULT_FORMAT; });
-has id => (is => 'ro', required => 1);
-
-# optional.
-
-
-# internal stuff.
-#hasd _currentRecordSet => (is => 'ro');
-#has _n => (is => 'ro', default => sub { 0 });
-#has _start => (is => 'ro', default => sub { 0 });
-#has _max_results => (is => 'ro', default => sub { 10 });
+has doi => (is => 'ro');
+has id => (is => 'ro');
 
 # Mapping
 my %FORMAT_MAPPING = (
     'endnote' => 'xe',
     'nlm' => 'xn',
     'marc' => 'xm',
+    'dc' => 'xd',
     );
 # Internal Methods. ------------------------------------------------------------
 
@@ -85,8 +78,17 @@ sub _call {
 
   # construct the url
   my $url = $self->base;
+  #my $query = $self->query || '';
+  #my $id = $self->id || '';
   my $fmt = $FORMAT_MAPPING{$self->format};
-  $url .= 'record/'.$self->id . '/export/' . $fmt;
+  if ($self->doi) {
+    #$url .= "search?&action_search=Suchen&of=" . $fmt . "p=" . $query;
+    $url .= 'search?p=doi%3A'. $self->doi .'&of='. $fmt .'&action_search=Suchen';
+  } elsif ($self->id) {
+    $url .= 'record/'. $self->id . '/export/' . $fmt;
+  } else {
+    Catmandu::BadVal->throw("Either ID or DOI is required.");
+  }
 
   # http get the url.
   my $res = $self->_request($url);
@@ -139,6 +141,13 @@ sub generator {
   my %attrs = (
     id => '1203476',
     format => 'endnote',
+  );
+
+  OR
+
+  my %attrs = (
+    query => 'doi:10.1103/PhysRevD.82.112004'
+    format => 'marc',
   );
 
   my $importer = Catmandu::Importer::Inspire->new(%attrs);

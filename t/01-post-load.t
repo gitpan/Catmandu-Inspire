@@ -4,22 +4,19 @@ use strict;
 use warnings;
 use Test::More;
 use Test::Exception;
-use lib qw(lib);
+
 my $pkg;
 BEGIN {
   $pkg = 'Catmandu::Importer::Inspire';
   use_ok($pkg);
 }
-require_ok($pkg);
 
-my %attrs = (
-  id => '1192938'
-);
+my $importer_id = Catmandu::Importer::Inspire->new(id => "1192938", format => "marc");
+isa_ok($importer_id, $pkg);
+can_ok($importer_id, 'each');
 
-my $importer = Catmandu::Importer::Inspire->new(%attrs);
+my $importer_query = Catmandu::Importer::Inspire->new(format => "dc", doi => "10.1103/PhysRevLett.105.026802");
+isa_ok($importer_id, $pkg);
+can_ok($importer_id, 'each');
 
-isa_ok($importer, $pkg);
-
-can_ok($importer, 'each');
-
-done_testing 4;
+done_testing 5;

@@ -3,14 +3,13 @@
 use strict;
 use warnings;
 use Test::More;
+use Test::Exception;
 
-use lib qw(lib);
 my $pkg;
 BEGIN {
-    $pkg = 'Catmandu::Importer::Inspire';
-    use_ok $pkg;
+  $pkg = 'Catmandu::Importer::Inspire';
+  use_ok($pkg);
 }
-
-require_ok $pkg;
+require_ok($pkg);
 
 done_testing 2;
