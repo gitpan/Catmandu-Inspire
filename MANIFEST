@@ -1,13 +1,13 @@
 Build.PL
+lib/Catmandu/Fix/inspire.pm
 lib/Catmandu/Importer/Inspire.pm
 lib/Catmandu/Inspire.pm
+LICENSE
+Makefile.PL
 MANIFEST
 META.json
 META.yml
 README
 t/00-load.t
 t/01-post-load.t
-Makefile.PL
-LICENSE
-META.yml
-META.json
+t/Catmandu-Fix-inspire.t
