@@ -7,6 +7,7 @@ use XML::Simple qw(XMLin);
 
 with 'Catmandu::Importer';
 
+our $VERSION = '0.151';
 
 # INFO:
 # http://inspirehep.net/

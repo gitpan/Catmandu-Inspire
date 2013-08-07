@@ -6,11 +6,11 @@ Catmandu::Inspire - Catmandu modules for working with Inspire data.
 
 =head1 VERSION
 
-Version 0.1
+Version 0.151
 
 =cut
 
-our $VERSION = '0.15';
+our $VERSION = '0.151';
 
 =head1 MODULES
 
