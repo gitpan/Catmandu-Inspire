@@ -6,7 +6,7 @@ WriteMakefile
   'NAME' => 'Catmandu::Inspire',
   'VERSION_FROM' => 'lib/Catmandu/Inspire.pm',
   'PREREQ_PM' => {
-                   'Catmandu' => '0.5004',
+                   'Catmandu' => '0.7',
                    'Furl' => '0.41',
                    'Software::License' => 0,
                    'Test::Exception' => 0,

@@ -16,20 +16,18 @@ meta-spec:
   version: 1.4
 name: Catmandu-Inspire
 provides:
-  Catmandu::Fix::inspire:
-    file: lib/Catmandu/Fix/inspire.pm
-    version: 0.151
+  Catmandu::Fix::inspire_extract_id:
+    file: lib/Catmandu/Fix/inspire_extract_id.pm
   Catmandu::Importer::Inspire:
     file: lib/Catmandu/Importer/Inspire.pm
-    version: 0.151
   Catmandu::Inspire:
     file: lib/Catmandu/Inspire.pm
-    version: 0.151
+    version: 0.2
 requires:
-  Catmandu: 0.5004
+  Catmandu: 0.7
   Furl: 0.41
   XML::Simple: 2.20
   perl: v5.10.1
 resources:
   license: http://dev.perl.org/licenses/
-version: 0.151
+version: 0.2
