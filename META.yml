@@ -7,9 +7,9 @@ build_requires:
   Test::Exception: 0
   Test::More: 0
 configure_requires:
-  Module::Build: 0.40
+  Module::Build: 0.42
 dynamic_config: 1
-generated_by: 'Module::Build version 0.4004, CPAN::Meta::Converter version 2.131560'
+generated_by: 'Module::Build version 0.4203, CPAN::Meta::Converter version 2.131560'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -22,12 +22,12 @@ provides:
     file: lib/Catmandu/Importer/Inspire.pm
   Catmandu::Inspire:
     file: lib/Catmandu/Inspire.pm
-    version: 0.2
+    version: 0.21
 requires:
-  Catmandu: 0.7
+  Catmandu: 0.8
   Furl: 0.41
   XML::Simple: 2.20
   perl: v5.10.1
 resources:
   license: http://dev.perl.org/licenses/
-version: 0.2
+version: 0.21

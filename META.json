@@ -4,7 +4,7 @@
       "Vitali Peil <vitali.peil at uni-bielefeld.de>"
    ],
    "dynamic_config" : 1,
-   "generated_by" : "Module::Build version 0.4004, CPAN::Meta::Converter version 2.131560",
+   "generated_by" : "Module::Build version 0.4203",
    "license" : [
       "perl_5"
    ],
@@ -23,12 +23,12 @@
       },
       "configure" : {
          "requires" : {
-            "Module::Build" : "0.40"
+            "Module::Build" : "0.42"
          }
       },
       "runtime" : {
          "requires" : {
-            "Catmandu" : "0.7",
+            "Catmandu" : "0.8",
             "Furl" : "0.41",
             "XML::Simple" : "2.20",
             "perl" : "v5.10.1"
@@ -44,7 +44,7 @@
       },
       "Catmandu::Inspire" : {
          "file" : "lib/Catmandu/Inspire.pm",
-         "version" : "0.2"
+         "version" : "0.21"
       }
    },
    "release_status" : "stable",
@@ -53,5 +53,5 @@
          "http://dev.perl.org/licenses/"
       ]
    },
-   "version" : "0.2"
+   "version" : "0.21"
 }

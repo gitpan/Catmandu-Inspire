@@ -25,6 +25,10 @@ my $f2 = $fixer->fix($importer2);
 my $data = {
     'url' => 'http://inspirehep.net/record/811388',
     'id' => '811388',
+    'cern' => {
+    	'url' => 'http://cds.cern.ch/record/1156806',
+        'id' => '1156806'
+    },
     'arxiv' => {
         'url' => 'http://arxiv.org/abs/0901.3094',
         'id' => '0901.3094'
