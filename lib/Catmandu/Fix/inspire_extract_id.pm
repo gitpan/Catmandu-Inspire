@@ -96,7 +96,7 @@ Catmandu::Fix::inspire - a Catmandu Fix, which filters appropriate fields, e.g d
   use Catmandu::Importer::Inspire;
   use Catmandu::Fix::inspire;
 
-  my $fixer = Catmandu::Fix->new(fixes => ['inspire()']);
+  my $fixer = Catmandu::Fix->new(fixes => ['inspire_extract_id()']);
   
   # get data via doi
   my $importer = Catmandu::Importer::Inspire->new(format => 'marc', doi => "10.1088/1126-6708/2009/03/112");

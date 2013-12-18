@@ -10,7 +10,7 @@ Version 0.21
 
 =cut
 
-our $VERSION = '0.21';
+our $VERSION = 'v0.23';
 
 =head1 MODULES
 
