@@ -1,16 +1,13 @@
 package Catmandu::Inspire;
 
+our $VERSION = 'v0.24';
+
+1;
+__END__
+
 =head1 NAME
 
 Catmandu::Inspire - Catmandu modules for working with Inspire data.
-
-=head1 VERSION
-
-Version 0.21
-
-=cut
-
-our $VERSION = 'v0.23';
 
 =head1 MODULES
 
@@ -31,5 +28,3 @@ our $VERSION = 'v0.23';
 =back
 
 =cut
-
-1;

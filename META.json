@@ -38,18 +38,31 @@
          "requires" : {
             "Catmandu" : "0.8002",
             "Furl" : "0.41",
+            "Moo" : "1.004",
             "XML::Simple" : "2.2",
             "perl" : "v5.10.1"
          }
       },
       "test" : {
          "requires" : {
+            "Test::Exception" : "0.32",
             "Test::More" : "0.88"
          }
       }
    },
    "release_status" : "stable",
-   "version" : "v0.23",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/LibreCat/Catmandu-Inspire/issues"
+      },
+      "homepage" : "https://github.com/LibreCat/Catmandu-Inspire",
+      "repository" : {
+         "type" : "git",
+         "url" : "https://github.com/LibreCat/Catmandu-Inspire.git",
+         "web" : "https://github.com/LibreCat/Catmandu-Inspire"
+      }
+   },
+   "version" : "v0.24",
    "x_contributors" : [
       "Vitali <vitali.peil@uni-bielefeld.de>",
       "vpeil <vitali.peil@uni-bielefeld.de>"

@@ -1,5 +1,7 @@
 package Catmandu::Fix::inspire_extract_id;
 
+use strict;
+use warnings;
 use Catmandu::Sane;
 use Moo;
 

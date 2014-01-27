@@ -1,5 +1,7 @@
 package Catmandu::Importer::Inspire;
 
+use strict;
+use warnings;
 use Catmandu::Sane;
 use Moo;
 use Furl;
