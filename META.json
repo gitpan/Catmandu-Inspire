@@ -36,10 +36,10 @@
       },
       "runtime" : {
          "requires" : {
-            "Catmandu" : "0.8002",
+            "Catmandu" : "0.8014",
             "Furl" : "0.41",
             "Moo" : "1.004",
-            "XML::Simple" : "2.2",
+            "XML::LibXML::Simple" : "0.93",
             "perl" : "v5.10.1"
          }
       },
@@ -62,7 +62,7 @@
          "web" : "https://github.com/LibreCat/Catmandu-Inspire"
       }
    },
-   "version" : "v0.24",
+   "version" : "0.26",
    "x_contributors" : [
       "Vitali <vitali.peil@uni-bielefeld.de>",
       "vpeil <vitali.peil@uni-bielefeld.de>"

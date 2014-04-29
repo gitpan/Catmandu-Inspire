@@ -1,5 +1,8 @@
 Revision history for Catmandu-Inspire
 
+0.26  2014-04-29 07:25:09 CEST
+	- use another XML parser, XML::LibXML::Simple
+
 v0.24  2014-01-27 14:38:56 CET
 	- more meta information
 

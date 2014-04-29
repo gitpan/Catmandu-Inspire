@@ -5,7 +5,7 @@ use warnings;
 use Catmandu::Sane;
 use Moo;
 use Furl;
-use XML::Simple qw(XMLin);
+use XML::LibXML::Simple qw(XMLin);
 
 with 'Catmandu::Importer';
 
@@ -63,7 +63,7 @@ sub _request {
 sub _hashify {
   my ($self, $in) = @_;
 
-  my $xs = XML::Simple->new();
+  my $xs = XML::LibXML::Simple->new();
   my $out = $xs->XMLin(
 	  $in, 
   );
