@@ -1,7 +1,7 @@
 ---
 abstract: 'Catmandu modules for working with Inspire data.'
 author:
-  - '=over'
+  - 'Vitali Peil, C<< <vitali.peil at uni-bielefeld.de> >>'
 build_requires:
   Test::Exception: 0.32
   Test::More: 0.88
@@ -32,7 +32,7 @@ resources:
   bugtracker: https://github.com/LibreCat/Catmandu-Inspire/issues
   homepage: https://github.com/LibreCat/Catmandu-Inspire
   repository: https://github.com/LibreCat/Catmandu-Inspire.git
-version: 0.26
+version: 0.261
 x_contributors:
   - 'Vitali <vitali.peil@uni-bielefeld.de>'
   - 'vpeil <vitali.peil@uni-bielefeld.de>'

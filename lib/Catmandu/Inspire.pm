@@ -1,6 +1,6 @@
 package Catmandu::Inspire;
 
-our $VERSION = '0.26';
+our $VERSION = '0.261';
 
 1;
 
@@ -22,10 +22,6 @@ Catmandu::Inspire - Catmandu modules for working with Inspire data.
 
 =head1 AUTHOR
 
-=over
-
-=item * Vitali Peil, C<< <vitali.peil at uni-bielefeld.de> >>
-
-=back
+Vitali Peil, C<< <vitali.peil at uni-bielefeld.de> >>
 
 =cut
