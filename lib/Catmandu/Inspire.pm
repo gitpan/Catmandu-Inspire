@@ -1,6 +1,6 @@
 package Catmandu::Inspire;
 
-our $VERSION = '0.261';
+our $VERSION = '0.262';
 
 1;
 

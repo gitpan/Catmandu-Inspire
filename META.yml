@@ -32,7 +32,7 @@ resources:
   bugtracker: https://github.com/LibreCat/Catmandu-Inspire/issues
   homepage: https://github.com/LibreCat/Catmandu-Inspire
   repository: https://github.com/LibreCat/Catmandu-Inspire.git
-version: 0.261
+version: 0.262
 x_contributors:
   - 'Vitali <vitali.peil@uni-bielefeld.de>'
   - 'vpeil <vitali.peil@uni-bielefeld.de>'
