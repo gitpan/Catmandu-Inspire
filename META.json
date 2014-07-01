@@ -4,7 +4,7 @@
       "Vitali Peil, C<< <vitali.peil at uni-bielefeld.de> >>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Milla version v1.0.4, Dist::Zilla version 5.006, CPAN::Meta::Converter version 2.131560",
+   "generated_by" : "Dist::Milla version v1.0.5, Dist::Zilla version 5.016, CPAN::Meta::Converter version 2.131560",
    "license" : [
       "perl_5"
    ],
@@ -26,7 +26,7 @@
    "prereqs" : {
       "configure" : {
          "requires" : {
-            "Module::Build::Tiny" : "0.030"
+            "Module::Build::Tiny" : "0.036"
          }
       },
       "develop" : {
@@ -62,9 +62,10 @@
          "web" : "https://github.com/LibreCat/Catmandu-Inspire"
       }
    },
-   "version" : "0.262",
+   "version" : "0.263",
    "x_contributors" : [
       "Vitali <vitali.peil@uni-bielefeld.de>",
+      "Vitali Peil <vitali.peil@uni-bielefeld.de>",
       "vpeil <vitali.peil@uni-bielefeld.de>"
    ]
 }

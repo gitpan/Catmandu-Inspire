@@ -1,5 +1,9 @@
 Revision history for Catmandu-Inspire
 
+0.263  2014-07-01 10:38:40 CEST
+	- compatible with new Moo version
+	- tests
+
 0.262  2014-05-06 07:52:39 CEST
 	- cpan, please index me
 

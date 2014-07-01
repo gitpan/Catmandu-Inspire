@@ -10,10 +10,12 @@ with 'Catmandu::Importer';
 use constant BASE_URL       => 'http://inspirehep.net/';
 use constant DEFAULT_FORMAT => 'endnote';
 
-has base   => ( is => 'ro', default => sub { return BASE_URL; } );
-has format => ( is => 'ro', default => sub { return DEFAULT_FORMAT; } );
-has doi    => ( is => 'ro' );
-has id     => ( is => 'ro' );
+has base => ( is => 'ro', default => sub { return BASE_URL; } );
+has fmt  => ( is => 'ro', default => sub { return DEFAULT_FORMAT; } );
+has doi  => ( is => 'ro' );
+has query => ( is => 'ro' );
+has id    => ( is => 'ro' );
+has limit => ( is => 'ro', default => sub { return 25; } );
 
 my %FORMAT_MAPPING = (
     'endnote' => 'xe',
@@ -21,6 +23,13 @@ my %FORMAT_MAPPING = (
     'marc'    => 'xm',
     'dc'      => 'xd',
 );
+
+sub BUILD {
+    my $self = shift;
+
+    Catmandu::BadVal->throw("Either ID or DOI or a QUERY is required.")
+        unless $self->id || $self->doi || $self->query;
+}
 
 sub _request {
     my ( $self, $url ) = @_;
@@ -49,19 +58,20 @@ sub _call {
     my ($self) = @_;
 
     my $url = $self->base;
-    my $fmt = $FORMAT_MAPPING{ $self->format };
-    if ( $self->doi ) {
-        $url
-            .= 'search?p=doi%3A'
-            . $self->doi . '&of='
-            . $fmt
-            . '&action_search=Suchen';
-    }
-    elsif ( $self->id ) {
+    my $fmt = $FORMAT_MAPPING{ $self->fmt };
+
+    if ( $self->id ) {
         $url .= 'record/' . $self->id . '/export/' . $fmt;
     }
     else {
-        Catmandu::BadVal->throw("Either ID or DOI is required.");
+        $url .= 'search?p=';
+        ( $self->doi )
+            ? ( $url .= 'doi%3A' . $self->doi )
+            : ( $url .= $self->query );
+
+        $url .= '&of=' . $fmt;
+        $url .= '&rg=' . $self->limit;
+        $url .= '&action_search=Suchen';
     }
 
     my $res = $self->_request($url);
