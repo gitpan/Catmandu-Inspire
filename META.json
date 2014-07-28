@@ -1,7 +1,7 @@
 {
    "abstract" : "Catmandu modules for working with Inspire data.",
    "author" : [
-      "Vitali Peil, C<< <vitali.peil at uni-bielefeld.de> >>"
+      "Vitali Peil"
    ],
    "dynamic_config" : 0,
    "generated_by" : "Dist::Milla version v1.0.5, Dist::Zilla version 5.016, CPAN::Meta::Converter version 2.131560",
@@ -37,16 +37,17 @@
       "runtime" : {
          "requires" : {
             "Catmandu" : "0.8014",
+            "Catmandu::XML" : "0.14",
             "Furl" : "0.41",
             "Moo" : "1.004",
-            "XML::LibXML::Simple" : "0.93",
             "perl" : "v5.10.1"
          }
       },
       "test" : {
          "requires" : {
             "Test::Exception" : "0.32",
-            "Test::More" : "0.88"
+            "Test::More" : "0.88",
+            "Test::RequiresInternet" : "0.02"
          }
       }
    },
@@ -62,7 +63,7 @@
          "web" : "https://github.com/LibreCat/Catmandu-Inspire"
       }
    },
-   "version" : "0.263",
+   "version" : "0.264",
    "x_contributors" : [
       "Vitali <vitali.peil@uni-bielefeld.de>",
       "Vitali Peil <vitali.peil@uni-bielefeld.de>",

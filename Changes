@@ -1,5 +1,11 @@
 Revision history for Catmandu-Inspire
 
+0.264  2014-07-28 09:31:56 CEST
+	- iterates over single records
+	- fix module removed; not needed
+	- tests
+	- pod
+
 0.263  2014-07-01 10:38:40 CEST
 	- compatible with new Moo version
 	- tests
