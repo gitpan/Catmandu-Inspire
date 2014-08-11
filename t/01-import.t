@@ -1,10 +1,8 @@
 use strict;
 use warnings FATAL => 'all';
 use Test::More;
-use Test::RequiresInternet;
 
 my $pkg;
-
 BEGIN {
     $pkg = 'Catmandu::Importer::Inspire';
     use_ok $pkg;

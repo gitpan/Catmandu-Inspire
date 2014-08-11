@@ -3,11 +3,11 @@ abstract: 'Catmandu modules for working with Inspire data.'
 author:
   - 'Vitali Peil'
 build_requires:
+  Module::Build: 0.3601
   Test::Exception: 0.32
   Test::More: 0.88
-  Test::RequiresInternet: 0.02
 configure_requires:
-  Module::Build::Tiny: 0.036
+  Module::Build: 0.3601
 dynamic_config: 0
 generated_by: 'Dist::Milla version v1.0.5, Dist::Zilla version 5.016, CPAN::Meta::Converter version 2.131560'
 license: perl
@@ -24,7 +24,7 @@ no_index:
     - eg
     - examples
 requires:
-  Catmandu: 0.8014
+  Catmandu: 0.9204
   Catmandu::XML: 0.14
   Furl: 0.41
   Moo: 1.004
@@ -33,7 +33,7 @@ resources:
   bugtracker: https://github.com/LibreCat/Catmandu-Inspire/issues
   homepage: https://github.com/LibreCat/Catmandu-Inspire
   repository: https://github.com/LibreCat/Catmandu-Inspire.git
-version: 0.264
+version: 0.265
 x_contributors:
   - 'Vitali <vitali.peil@uni-bielefeld.de>'
   - 'Vitali Peil <vitali.peil@uni-bielefeld.de>'

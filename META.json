@@ -24,9 +24,14 @@
       ]
    },
    "prereqs" : {
+      "build" : {
+         "requires" : {
+            "Module::Build" : "0.3601"
+         }
+      },
       "configure" : {
          "requires" : {
-            "Module::Build::Tiny" : "0.036"
+            "Module::Build" : "0.3601"
          }
       },
       "develop" : {
@@ -36,7 +41,7 @@
       },
       "runtime" : {
          "requires" : {
-            "Catmandu" : "0.8014",
+            "Catmandu" : "0.9204",
             "Catmandu::XML" : "0.14",
             "Furl" : "0.41",
             "Moo" : "1.004",
@@ -46,8 +51,7 @@
       "test" : {
          "requires" : {
             "Test::Exception" : "0.32",
-            "Test::More" : "0.88",
-            "Test::RequiresInternet" : "0.02"
+            "Test::More" : "0.88"
          }
       }
    },
@@ -63,7 +67,7 @@
          "web" : "https://github.com/LibreCat/Catmandu-Inspire"
       }
    },
-   "version" : "0.264",
+   "version" : "0.265",
    "x_contributors" : [
       "Vitali <vitali.peil@uni-bielefeld.de>",
       "Vitali Peil <vitali.peil@uni-bielefeld.de>",
